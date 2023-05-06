@@ -5,6 +5,9 @@
 #
 
 import sys
+import math
+import numpy as np
+
 # print(sys.argv[1])
 # print(sys.argv[2])
 
@@ -15,7 +18,7 @@ person = sys.argv[2]
 # Greeting Function
 def greeting(greetingType):
     i = 0
-    while i < 12:
+    while i < 10:
         i = i + 1
         print(greetingType + ", " + person + "! (" + str(i) + ")")
 
@@ -26,4 +29,10 @@ if opt == '-h':
 elif opt == '-g':
     greeting('Goodbye')
 
+print("Math Time")
+theNumber = 8.23324234
+print(math.ceil(theNumber))
+print(math.pi)
 
+a = np.array([1, 2, 3, 4])
+print(np.std(a))
